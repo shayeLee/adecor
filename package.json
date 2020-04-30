@@ -1,0 +1,17 @@
+{
+  "name": "fe-doc",
+  "version": "0.0.1",
+  "description": "Front-end document generation tools",
+  "main": "lib/index.js",
+  "repository": "git@github.com:shayeLee/fe-doc.git",
+  "author": "shayeLee <shaye_web@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
