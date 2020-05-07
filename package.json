@@ -8,6 +8,9 @@
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node-dev' src/index.ts",
     "build": "rimraf lib && tsc"
   },
+  "bin": {
+    "adecor": "bin/index.ts"
+  },
   "dependencies": {
     "@babel/generator": "^7.9.6",
     "@babel/parser": "^7.9.6",
