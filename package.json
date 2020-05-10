@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node-dev' src/index.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node-dev' src/fileTraverse/index.ts",
     "build": "rimraf lib && tsc"
   },
   "bin": {

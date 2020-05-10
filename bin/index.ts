@@ -1,3 +1,5 @@
 #! /usr/bin/env ts-node
 
-console.log('hello world =>', process.argv);
+import { fileTraverse } from '../src';
+
+console.log(fileTraverse);

@@ -8,9 +8,15 @@
     "**/*.spec.ts"
   ],
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES6",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "lib"
+    "outDir": "lib",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   }
 }
