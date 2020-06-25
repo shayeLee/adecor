@@ -2,17 +2,22 @@
   "name": "adecor",
   "version": "0.0.1",
   "description": "Front-end document generation tools",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node-dev' src/index.ts",
-    "build": "rimraf lib && tsc"
+    "build": "rimraf esm && tsc"
+  },
+  "bin": {
+    "adecor": "bin/index.ts"
   },
   "dependencies": {
     "@babel/generator": "^7.9.6",
     "@babel/parser": "^7.9.6",
     "@babel/traverse": "^7.9.6",
-    "@babel/types": "^7.9.6"
+    "@babel/types": "^7.9.6",
+    "commander": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^13.13.4",

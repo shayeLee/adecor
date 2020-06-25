@@ -3,14 +3,21 @@
     "src/**/*"
   ],
   "exclude": [
-    "lib",
+    "esm",
     "node_modules",
     "**/*.spec.ts"
   ],
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ES6",
     "module": "commonjs",
+    "resolveJsonModule": true,
     "declaration": true,
-    "outDir": "lib"
+    "outDir": "esm",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   }
 }
